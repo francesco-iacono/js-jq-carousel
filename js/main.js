@@ -13,6 +13,17 @@ $(document).ready(
         nextImges();
       }
     );
+  // inizio scorrere le immagini con la tastiera
+    $(document).keydown(
+      function () {
+        if (event.keyCode == 37) { //verso sinistra
+            prevImges();
+        } else if (event.keyCode == 39) { //verso destra
+          nextImges();
+        }
+      }
+    );
+  // fine scorrere le immagini con la tastiera
   }
 );
 
